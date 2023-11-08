@@ -9,14 +9,14 @@ import Header from '@/components/Header'
 
 export const metadata: Metadata = {
   title: 'Jassspro',
-  description: 'Free & open-source text similarity API',
-}
+  description: 'Jassspro cosplayer',
+};
 
 export default function Home() {
   return (
     <section className="relative">
       <img
-        src="/jassspro.jpg"
+        src="/jassspro-new.png"
         alt="jassspro"
         className="absolute w-full h-screen object-cover"
       />
@@ -28,59 +28,47 @@ export default function Home() {
           <span className="text-jassspro-pink text-xl font-light uppercase">
             Jasmine
           </span>
-          <h1 className="text-white text-[50px] font-normal uppercase">
+          <h1 className="text-black text-[50px] font-normal uppercase">
             Jassspro
           </h1>
           <div className="flex items-center gap-4 mt-16 flex-wrap">
             <a
               href="https://www.instagram.com/jassspro"
               target="_blank"
-              className="px-4 py-2 border-l border-gray-400 group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
             >
-              <Instagram
-                className="text-white mb-2 group-hover:text-jassspro-pink"
-                size={24}
-              />
-              <span className="text-gray-400 group-hover:text-jassspro-pink">
+              <Instagram className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
+              <span className="text-jassspro-pink group-hover:text-pink-400  lg:text-base text-sm">
                 Instagram
               </span>
             </a>
             <a
-              className="px-4 py-2 border-l border-gray-400 group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
               href="https://web.facebook.com/jassspro"
               target="_blank"
             >
-              <Facebook
-                className="text-white mb-2 group-hover:text-jassspro-pink"
-                size={24}
-              />
-              <span className="text-gray-400 group-hover:text-jassspro-pink">
+              <Facebook className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
+              <span className="text-jassspro-pink group-hover:text-pink-400  lg:text-base text-sm">
                 Facebook
               </span>
             </a>
             <a
-              className="px-4 py-2 border-l border-gray-400 group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
               href="https://onlyfans.com/jassspro"
               target="_blank"
             >
-              <SiOnlyfans
-                className="text-white mb-2 group-hover:text-jassspro-pink"
-                size={24}
-              />
-              <span className="text-gray-400 group-hover:text-jassspro-pink">
+              <SiOnlyfans className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
+              <span className="text-jassspro-pink group-hover:text-pink-400 lg:text-base text-sm">
                 Onlyfans
               </span>
             </a>
             <a
-              className="px-4 py-2 border-l border-gray-400 group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
               href="https://www.tiktok.com/@jassspro"
               target="_blank"
             >
-              <FaTiktok
-                className="text-white mb-2 group-hover:text-jassspro-pink"
-                size={24}
-              />
-              <span className="text-gray-400 group-hover:text-jassspro-pink">
+              <FaTiktok className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
+              <span className="text-jassspro-pink group-hover:text-pink-400  lg:text-base text-sm">
                 Tiktok
               </span>
             </a>
