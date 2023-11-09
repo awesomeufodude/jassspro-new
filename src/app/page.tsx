@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'Jassspro',
@@ -15,6 +16,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <section className="relative">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <img
         src="/jassspro-new.png"
         alt="jassspro"
@@ -43,32 +47,32 @@ export default function Home() {
               </span>
             </a>
             <a
-              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-blue-800 group"
               href="https://web.facebook.com/jassspro"
               target="_blank"
             >
-              <Facebook className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
-              <span className="text-jassspro-pink group-hover:text-pink-400  lg:text-base text-sm">
+              <Facebook className="text-blue-800 mb-2 group-hover:text-blue-600 text-2xl" />
+              <span className="text-blue-800 group-hover:text-blue-600  lg:text-base text-sm">
                 Facebook
               </span>
             </a>
             <a
-              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-blue-500 group"
               href="https://onlyfans.com/jassspro"
               target="_blank"
             >
-              <SiOnlyfans className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
-              <span className="text-jassspro-pink group-hover:text-pink-400 lg:text-base text-sm">
+              <SiOnlyfans className="text-blue-500 mb-2 group-hover:text-blue-700 text-2xl" />
+              <span className="text-blue-500 group-hover:text-blue-700 lg:text-base text-sm">
                 Onlyfans
               </span>
             </a>
             <a
-              className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
+              className="lg:px-4 lg:py-2 lg:border-l  border-black group"
               href="https://www.tiktok.com/@jassspro"
               target="_blank"
             >
-              <FaTiktok className="text-jassspro-pink mb-2 group-hover:text-pink-400 text-2xl" />
-              <span className="text-jassspro-pink group-hover:text-pink-400  lg:text-base text-sm">
+              <FaTiktok className="text-black mb-2 group-hover:text-gray-700 text-2xl" />
+              <span className="text-black group-hover:text-gray-700  lg:text-base text-sm">
                 Tiktok
               </span>
             </a>
