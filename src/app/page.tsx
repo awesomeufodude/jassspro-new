@@ -37,6 +37,16 @@ export default function Home() {
           </h1>
           <div className="flex items-center gap-4 mt-16 flex-wrap">
             <a
+              className="lg:px-4 lg:py-2 lg:border-l  border-blue-500 group"
+              href="https://onlyfans.com/jassspro"
+              target="_blank"
+            >
+              <SiOnlyfans className="text-blue-500 mb-2 group-hover:text-blue-700 text-2xl" />
+              <span className="text-blue-500 group-hover:text-blue-700 lg:text-base text-sm">
+                Onlyfans
+              </span>
+            </a>
+            <a
               href="https://www.instagram.com/jassspro"
               target="_blank"
               className="lg:px-4 lg:py-2 lg:border-l  border-jassspro-pink group"
@@ -56,16 +66,7 @@ export default function Home() {
                 Facebook
               </span>
             </a>
-            <a
-              className="lg:px-4 lg:py-2 lg:border-l  border-blue-500 group"
-              href="https://onlyfans.com/jassspro"
-              target="_blank"
-            >
-              <SiOnlyfans className="text-blue-500 mb-2 group-hover:text-blue-700 text-2xl" />
-              <span className="text-blue-500 group-hover:text-blue-700 lg:text-base text-sm">
-                Onlyfans
-              </span>
-            </a>
+
             <a
               className="lg:px-4 lg:py-2 lg:border-l  border-black group"
               href="https://www.tiktok.com/@jassspro"
