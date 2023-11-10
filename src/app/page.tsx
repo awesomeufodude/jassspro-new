@@ -1,26 +1,22 @@
-import Image from 'next/image'
 import { Instagram, Facebook } from 'lucide-react';
 import {FaTiktok} from "react-icons/fa";
 import {SiOnlyfans} from "react-icons/si";
-import Link from 'next/link'
-
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
-import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'Jassspro',
   description: 'Jassspro cosplayer',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function Home() {
   return (
     <section className="relative">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <img
-        src="/jassspro-new.png"
+        src="/jassspro-new.webp"
         alt="jassspro"
         className="absolute w-full h-screen object-cover"
       />
