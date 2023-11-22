@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, Verified } from 'lucide-react';
 import {FaTiktok} from "react-icons/fa";
 import {SiOnlyfans} from "react-icons/si";
 import type { Metadata } from 'next'
@@ -14,16 +14,82 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="relative">
-      <img
-        src="/jassspro-new.webp"
-        alt="jassspro"
-        className="absolute w-full h-screen object-cover"
-      />
-      <div className="absolute w-full z-10 pt-10 px-8">
+    <section className=" bg-[url('/Si-1.jpg')] bg-no-repeat bg-cover bg-center min-h-screen">
+      {/* <div className="absolute w-full z-10 pt-10 px-8">
         <Header />
+      </div> */}
+      <div className="w-full h-screen flex flex-col lg:justify-between justify-evenly p-4">
+        <div className="flex items-center justify-center flex-col">
+          <div className="flex items-center gap-1 bg-white border-2 border-blue-500  rounded-full py-1 px-3">
+            <Verified className="text-blue-500 text-sm" />
+            <h1 className="text-blue-500 font-semibold text-sm">
+              Verified
+            </h1>
+          </div>
+          <img
+            src="/avengers.png"
+            alt="avengers"
+            className="w-20 h-20 rounded-full object-cover mt-3"
+          />
+          <h1 className="text-white text-5xl font-bold mt-3">
+            JASSSPRO
+          </h1>
+          <h1 className="text-white text-2xl font-semibold mt-3">
+            Cosplayer & Model
+          </h1>
+        </div>
+        <div className="px-5">
+          <a
+            href="https://onlyfans.com/jassspro"
+            target="_blank"
+            rel="noopener"
+          >
+            <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-4 mx-3 my-3 lg:max-w-md lg:mx-auto relative">
+              <SiOnlyfans className="text-blue-500 text-2xl absolute left-5" />
+              <span className="text-blue-500 text-lg font-semibold">
+                Onlyfans
+              </span>
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/jassspro"
+            target="_blank"
+            rel="noopener"
+          >
+            <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-4 mx-3 my-3 lg:max-w-md lg:mx-auto relative">
+              <Instagram className="text-fuchsia-600 text-2xl absolute left-5" />
+              <span className="text-fuchsia-600 text-lg font-semibold">
+                Instagram
+              </span>
+            </div>
+          </a>
+          <a
+            href="https://web.facebook.com/jassspro"
+            target="_blank"
+            rel="noopener"
+          >
+            <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-4 mx-3 my-3 lg:max-w-md lg:mx-auto relative">
+              <Facebook className="text-blue-800  text-2xl absolute left-5" />
+              <span className="text-blue-800 text-lg font-semibold">
+                Facebook
+              </span>
+            </div>
+          </a>
+          <a
+            href="https://www.tiktok.com/@jassspro"
+            target="_blank"
+            rel="noopener"
+          >
+            <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-4 mx-3 my-3 lg:max-w-md lg:mx-auto relative">
+              <FaTiktok className=" text-jassspro-pink text-xl absolute left-5" />
+              <span className="text-jassspro-pink text-lg font-semibold">
+                Tiktok
+              </span>
+            </div>
+          </a>
+        </div>
       </div>
-      <div className="absolute h-[650px] flex justify-center items-center w-full">
+      {/* <div className="flex justify-center items-center w-full h-screen">
         <div className="lg:w-3/4 w-full lg:p-0 px-8">
           <span className="text-jassspro-pink text-xl font-light uppercase">
             Jasmine
@@ -75,7 +141,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
