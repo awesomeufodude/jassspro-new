@@ -39,7 +39,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="px-5">
-          {/*<a
+          {<a
             href="https://onlyfans.com/jassspro"
             target="_blank"
             rel="noopener"
@@ -50,7 +50,7 @@ export default function Home() {
                 Onlyfans
               </span>
             </div>
-          </a>*/}
+          </a>}
           <a
             href="https://www.instagram.com/jassspro"
             target="_blank"
